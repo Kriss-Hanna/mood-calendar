@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+        > h1 {
+        margin-bottom: 20px;
+        }
+        > h2 {
+        margin-bottom: 20px;
+        }
+        > p {
+        margin: 10px 0;
+        }
+        > i {
+        margin: 1em 15px;
+        cursor: pointer;
+   
+        }
+}
+
+
+.container-calendar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border: solid 1px black;
+}
+
+.week-days-container {
+    display: flex;
+    > div{
+        margin: 0 5px;
+    };
+}
+
+.mood-container {
+
+    background-color: #fff;
+    border-radius: 5px;
+    height: 200px;
+    width: 200px; 
+    cursor: pointer;
+}
+
+button {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+
+@media screen and (max-width: 768px) {
+    .container-calendar{
+       display: flex;
+       flex-direction: column ;
+       align-items: center;
+    }
+} 
+
